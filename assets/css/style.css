@@ -1,11 +1,23 @@
-.container{
-  padding: 1rem;
+
+body{
+	background-image: url(https://www.raconteur.net/wp-content/uploads/2018/04/shutterstock_762930772.jpg);
+	text-align: center;
 }
 
-.row{
-  margin-top: .5rem;
+#game, #results{
+  color: white;
 }
 
-h1{
-  text-align: center;
+.text-muted{
+  color: white;
+  font: bolder
+}
+.last-seconds{
+  color: red;
+}
+.option{
+  margin: 15px;
+}
+.jumbotron{
+  background: none;
 }
