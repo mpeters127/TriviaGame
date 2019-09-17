@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Trivia Game</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+
+  <div class="header text-center clearfix">
+    <h1 class="text-muted">Formula 1 Trivia</h1>
+  </div>
+
+  <button id="start" class="btn btn-info btn-lg">Start Your Engines!</button>
+
+  <div>
+    <div id="quiz">
+      <p id="remaining-time" class="lead">Remaining Time: <span id="timer"></span></p>
+      <!-- question1  -->
+      <p>Michael Schumacher has the most Championships</p>
+      <!-- choices -->
+      <div>
+        <input type="radio" name="question1" id="question1true" value="true">
+        <label for="question1">True</label>
+        <input type="radio" name="question1" id="question1false" value="false">
+        <label for="question1">False</label>
+      </div>
+      <!-- question2  -->
+      <p>There are 30 drivers in F1</p>
+      <div>
+        <input type="radio" name="question2" id="question2true" value="true">
+        <label for="question2">True</label>
+        <input type="radio" name="question2" id="question2false" value="false">
+        <label for="question2">False</label>
+      </div>
+      <!-- question3  -->
+      <p>Formula 1 is only in Europe</p>
+      <div>
+        <input type="radio" name="question3" id="question3true" value="true">
+        <label for="question3">True</label>
+        <input type="radio" name="question3" id="question3false" value="false">
+        <label for="question3">False</label>
+      </div>
+      <p>Lewis Hamilton is the reigning World Champion?</p>
+      <div>
+        <input type="radio" name="question4" id="question4true" value="true">
+        <label for="question4">True</label>
+        <input type="radio" name="question4" id="question4false" value="false">
+        <label for="question4">False</label>
+      </div>
+      <div>
+        <button type="button" onclick="quiz.end()">Submit</button>
+      </div>
+    </div>
+    
+    <div id="results">
+      <p id="correct"></p>
+      <p id="incorrect"></p>
+    </div>
+  </div>
+
+  <!-- jQuery CDN-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Bootstrap CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <!-- TRIVIA APP JS -->
+  <script src="./assets/javascript/app2.js"></script>
+
+
+</body>
+
+</html>

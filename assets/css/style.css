@@ -1,7 +1,8 @@
 
 body{
 	background-image: url(https://www.raconteur.net/wp-content/uploads/2018/04/shutterstock_762930772.jpg);
-	text-align: center;
+  text-align: center;
+  color: white
 }
 
 #game, #results{
